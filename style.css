@@ -723,10 +723,10 @@ body {
 /* Why Choose Us Section */
 .why-choose-section {
     background: var(--dark-bg);
-    padding: 5rem 2rem;
+    padding: 0 2rem 5rem 2rem;
     border: 2px solid rgba(211, 47, 47, 0.3);
     border-radius: 10px;
-    margin: 3rem auto;
+    margin: 0 auto;
     max-width: 1400px;
     transition: all 0.3s;
     position: relative;
@@ -830,7 +830,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-    padding: 0.5rem 2rem 5rem 2rem;
+    padding: 1.5rem 2rem 5rem 2rem;
     background: var(--dark-bg);
 }
 
@@ -1102,6 +1102,22 @@ body {
     .nav-link {
         font-size: 0.85rem;
     }
+
+    .header-container {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .main-nav {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-menu {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1112,6 +1128,9 @@ body {
     .header-container {
         flex-wrap: wrap;
         padding: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .logo-wrapper {
@@ -1131,6 +1150,10 @@ body {
         margin-top: 1rem;
         padding: 1rem;
         border-radius: 5px;
+        max-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        overflow: visible;
     }
 
     .main-nav.active {
@@ -1142,12 +1165,18 @@ body {
         width: 100%;
         gap: 0.5rem;
         padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
     }
 
     .nav-link {
         padding: 0.75rem;
         display: block;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
     }
 
     .mobile-menu-toggle {

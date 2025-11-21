@@ -245,6 +245,6 @@ document.addEventListener('keydown', (e) => {
 // Initialize on DOM Load
 document.addEventListener('DOMContentLoaded', () => {
     // Add any initialization code here
-    console.log('4MANN Service website loaded');
+    console.log('Autofans website loaded');
     initSlider();
 });
